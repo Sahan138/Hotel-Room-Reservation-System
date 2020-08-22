@@ -1,0 +1,43 @@
+article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
+}
+
+#header-container {
+  width: 100%;
+}
+
+#bg-static {
+}
+
+.highlight-clean {
+}
+
+.highlight-clean {
+}
+
+:root {
+}
+
+@media (min-width: 353px) {
+  #festivals {
+    height: 1500px;
+  }
+}
+
+@media (min-width: 1200px) {
+  #festivals {
+    height: 1000px;
+  }
+}
+
+@media (min-width: 576px) {
+  #festivals {
+    height: 1400px;
+  }
+}
+
+@media (min-width: 768px) {
+  #festivals {
+    height: 1000px;
+  }
+}
+
