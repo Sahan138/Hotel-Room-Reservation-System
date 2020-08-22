@@ -16,6 +16,7 @@
     <link rel="stylesheet" href="assets/fonts/ionicons.min.css">
     <link rel="stylesheet" href="assets/css/Contact-Form-Clean.css">
     <link rel="stylesheet" href="assets/css/Features-Blue.css">
+    <link rel="stylesheet" href="assets/css/Footer-Clean.css">
     <link rel="stylesheet" href="assets/css/Footer-Dark.css">
     <link rel="stylesheet" href="assets/css/Highlight-Clean.css">
     <link rel="stylesheet" href="assets/css/Highlight-Phone.css">
@@ -51,24 +52,71 @@
                 </ul><span class="navbar-text actions"> <a class="login" href="login.html">Log In</a><a class="btn btn-light action-button" role="button" href="reg.html" style="background-color: rgb(63,140,228);">Sign Up</a></span></div>
         </div>
     </nav>
-    <div class="highlight-clean" style="background-image: url(&quot;assets/img/landing_page.png&quot;);background-position: center;background-repeat: no-repeat;background-size: cover;">
+    <div class="highlight-clean" style="margin-bottom: 50px;background: url(assets/img/landing_page.png) center / cover no-repeat;">
         <div class="container">
             <div class="intro">
-                <h2 class="text-center" style="font-size: 72px;font-weight: normal;color: rgb(255,255,255);">An&nbsp;<strong>ocean breeze</strong>&nbsp;puts a mind at ease.<br></h2>
+                <h3 class="text-center" style="font-size: 72px;font-weight: normal;color: rgb(255,255,255);">An&nbsp;<strong>ocean breeze</strong>&nbsp;puts a mind at ease.<br></h3>
                 <p class="text-center text-white-50" style="font-size: 24px;">Almost everything will work again if you unplug it for a few minutes. That's why we think you should plan your next vacation at <br>Seaside South Park.<br></p>
             </div>
-            <div class="buttons"><a class="btn btn-primary" role="button" href="index.html">Book Now</a><a class="btn btn-light" role="button" href="index.html">Upcoming Festivals</a></div>
+            <div class="buttons"><a class="btn btn-primary" role="button" href="index.html#book">Book Now</a><a class="btn btn-light" role="button" href="index.html#festivals">Upcoming Festivals</a></div>
         </div>
     </div>
-    <div class="container-fluid">
+    <div id="book" style="margin-bottom: 50px;">
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
-                    <h1>lorem ipsum</h1>
+                    <h1><strong>Find</strong> your stay</h1>
+                    <p>Reserve a room today</p>
+                </div>
+            </div>
+            <form>
+                <div class="form-row">
+                    <div class="col-md-3"><label>Check-In</label><input class="form-control" type="date"></div>
+                    <div class="col-md-3"><label>Check-Out</label><input class="form-control" type="date"></div>
+                    <div class="col-md-3"><label>Room Type</label><select class="form-control"><optgroup label="This is a group"><option value="12" selected="">This is item 1</option><option value="13">This is item 2</option><option value="14">This is item 3</option></optgroup></select></div>
+                    <div
+                        class="col-md-3"><label>&nbsp;</label><button class="btn btn-primary" type="submit" style="width: 100%;">Check For Availability</button></div>
+        </div>
+        </form>
+    </div>
+    </div>
+    <div id="festivals" style="margin-bottom: 50px;">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h1><strong>Discover</strong>&nbsp;the Culture<br>Find the perfect festivals for you</h1>
+                    <p><a href="#">Learn More &gt;</a></p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="card" style="margin-bottom: 20px;"><img class="card-img-top w-100 d-block" style="background: url(assets/img/festival3.jpg) center / cover no-repeat;height: 300px;">
+                        <div class="card-body">
+                            <h4 class="card-title">Explore the city</h4>
+                            <p class="card-text">Always, some great culture is dying to enrich the soil of new harvests, some civlization is crumbling to rubbish to be the hill of a more beautiful city, some race is spending itself that a lower and more barbarous world may
+                                inherit its stored treasure house.<br></p><button class="btn btn-primary" type="button">Discover</button></div>
+                    </div>
+                </div>
+            </div>
+            <div class="row" style="height: 300px;">
+                <div class="col-md-6" style="margin-bottom: 20px;">
+                    <div class="card"><img class="card-img w-100 d-block" style="background: url(assets/img/festival1.jpg) center / cover no-repeat;height: 300px;border-radius: 5px;">
+                        <div class="card-img-overlay">
+                            <h4 style="color: rgb(255,255,255);text-shadow: 0px 0px 1px rgb(0,0,0);">Embrace The Culture</h4>
+                            <p style="color: rgb(255,255,255);text-shadow: 0px 0px 1px rgb(0,0,0);">It's always colorful</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6" style="margin-bottom: 20px;">
+                    <div class="card"><img class="card-img w-100 d-block" style="background: url(assets/img/festival2.jpg) center / cover no-repeat;height: 300px;border-radius: 5px;">
+                        <div class="card-img-overlay">
+                            <h4 style="color: rgb(255,255,255);text-shadow: 0px 0px 1px rgb(0,0,0);">Share love &amp; peace</h4>
+                            <p style="color: rgb(255,255,255);text-shadow: 0px 0px 1px rgb(0,0,0);">Beyond the limits</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
     </div>
     <div class="footer-dark" style="font-family: Cabin, sans-serif;">
         <footer>
