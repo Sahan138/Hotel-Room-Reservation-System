@@ -46,13 +46,14 @@
         $pass = $_POST['password'];
 
         $query = "Insert into tbluser (UName, Pass) Values ('$name', '$pass')";
-        $result = mysqli_query($query,$con);
+        $result = mysqli_query($con,$query,);
 
         if(!($result==NULL)){
-        echo '<script type="text/javascript>alert("Registration is successful. Please log in.");</script>';
+            header("location: login.php");
+            echo '<script type="text/javascript>alert("Registration is successful. Please log in.");</script>';
         }
         else{
-        echo '<script type="text/javascript">alert("Registration is unsuccessful.");</script>';
+            echo '<script type="text/javascript">alert("Registration is unsuccessful.");</script>';
         }
     }
 
@@ -101,7 +102,7 @@
     <div class="register-photo">
         <div class="form-container">
             <div class="image-holder" style="background-image: url(&quot;assets/img/seaside_reg.jpg&quot;);background-repeat: no-repeat;background-size: cover;background-position: center;"></div>
-            <form name="signup" action="#" method="POST">
+            <form name="signup" action="reg.php" method="POST">
                 <h2 class="text-center"><strong>Create</strong> an account.</h2>
                 <div class="form-group"><input class="form-control" type="text" name="uname" placeholder="Username" required maxlength="16"></div>
                 <div class="form-group"><input class="form-control" type="password" name="password" placeholder="Password" required maxlength="16"></div>
