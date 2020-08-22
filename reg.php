@@ -1,3 +1,33 @@
+<?php
+
+    $username = "root";
+    $password = "";
+
+    $con = mysqli_connect("localhost",$username,$password);
+    mysqli_select_db($con,"SeasideDB");
+
+    if(isset($_POST['submit'])){
+
+    $name = $_POST['uname'];
+    $pass = $_POST['password'];
+
+    $query = "Insert into tbluser (UName, Pass) Values ('$name', '$pass')";
+
+    $result = mysqli_query($query,$con);
+
+    if(!($result==NULL)){
+    echo '<script type="text/javascript>alert("Registration is successful. Please log in.");</script>';
+    }
+    else{
+    echo '<script type="text/javascript">alert("Registration is unsuccessful.");</script>';
+    }
+
+    }
+
+    mysqli_close($con);
+    
+?>
+
 <!DOCTYPE html>
 <html>
 
@@ -36,11 +66,34 @@
     <link rel="stylesheet" href="assets/css/styles.css">
     <link rel="stylesheet" href="assets/css/Team-Clean.css">
     <link rel="stylesheet" href="assets/css/Testimonials.css">
+    
+    <script>
+
+        function validateSignup()
+    {
+        var terms = document.getElementById("terms").checked;
+
+        if(!(document.signup.password.value == document.signup.passwordrepeat.value))
+	    {
+		    alert("Passwords don't match");
+		    return;
+        }
+        if(!(terms==true)){
+            alert("Please agree to Terms & Conditions");
+            return;
+        }
+        else{
+
+        }
+    }
+
+    </script>
+
 </head>
 
 <body style="font-family: Cabin, sans-serif;">
     <nav class="navbar navbar-light navbar-expand-md navigation-clean-button" style="font-family: Cabin, sans-serif;">
-        <div class="container"><a class="navbar-brand" href="index.html">Seaside South Park</a><button data-toggle="collapse" class="navbar-toggler" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+        <div class="container"><a class="navbar-brand" href="index.php">Seaside South Park</a><button data-toggle="collapse" class="navbar-toggler" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
             <div
                 class="collapse navbar-collapse" id="navcol-1">
                 <ul class="nav navbar-nav mr-auto">
@@ -49,21 +102,21 @@
                     <li class="nav-item dropdown"><a class="dropdown-toggle nav-link" data-toggle="dropdown" aria-expanded="false" href="#">Discover More</a>
                         <div class="dropdown-menu" role="menu"><a class="dropdown-item" role="presentation" href="facilities.html">Facilities</a><a class="dropdown-item" role="presentation" href="gallery.html">Gallery</a></div>
                     </li>
-                </ul><span class="navbar-text actions"> <a class="login" href="login.html">Log In</a><a class="btn btn-light action-button" role="button" href="reg.html" style="background-color: rgb(63,140,228);">Sign Up</a></span></div>
+                </ul><span class="navbar-text actions"> <a class="login" href="login.php">Log In</a><a class="btn btn-light action-button" role="button" href="reg.php" style="background-color: rgb(63,140,228);">Sign Up</a></span></div>
         </div>
     </nav>
     <div class="register-photo">
         <div class="form-container">
             <div class="image-holder" style="background-image: url(&quot;assets/img/seaside_reg.jpg&quot;);background-repeat: no-repeat;background-size: cover;background-position: center;"></div>
-            <form method="post">
+            <form name="signup" action="#" method="POST">
                 <h2 class="text-center"><strong>Create</strong> an account.</h2>
-                <div class="form-group"><input class="form-control" type="email" name="email" placeholder="Email"></div>
-                <div class="form-group"><input class="form-control" type="password" name="password" placeholder="Password"></div>
-                <div class="form-group"><input class="form-control" type="password" name="password-repeat" placeholder="Password (repeat)"></div>
+                <div class="form-group"><input class="form-control" type="text" name="uname" placeholder="Username" required maxlength="16"></div>
+                <div class="form-group"><input class="form-control" type="password" name="password" placeholder="Password" required maxlength="16"></div>
+                <div class="form-group"><input class="form-control" type="password" name="passwordrepeat" placeholder="Password (repeat)" required maxlength="16"></div>
                 <div class="form-group">
-                    <div class="form-check"><label class="form-check-label"><input class="form-check-input" type="checkbox">I agree to the license terms.</label></div>
+                    <div class="form-check"><label class="form-check-label"><input class="form-check-input" type="checkbox" name="terms" id="terms">I agree to the license terms.</label></div>
                 </div>
-                <div class="form-group"><button class="btn btn-primary btn-block" type="submit" style="background-color: rgb(63,140,228);">Sign Up</button></div><a class="already" href="#">You already have an account? Login here.</a></form>
+                <div class="form-group"><button class="btn btn-primary btn-block" type="submit" onclick="validateSignup();" style="background-color: rgb(63,140,228);">Sign Up</button></div><a class="already" href="login.html">You already have an account? Login here.</a></form>
         </div>
     </div>
     <div class="footer-dark" style="font-family: Cabin, sans-serif;">

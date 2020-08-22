@@ -40,25 +40,83 @@
 
 <body style="font-family: Cabin, sans-serif;">
     <nav class="navbar navbar-light navbar-expand-md navigation-clean-button" style="font-family: Cabin, sans-serif;">
-        <div class="container"><a class="navbar-brand" href="index.html">Seaside South Park</a><button data-toggle="collapse" class="navbar-toggler" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+        <div class="container"><a class="navbar-brand" href="index.php">Seaside South Park</a><button data-toggle="collapse" class="navbar-toggler" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
             <div
                 class="collapse navbar-collapse" id="navcol-1">
                 <ul class="nav navbar-nav mr-auto">
-                    <li class="nav-item" role="presentation"><a class="nav-link active" href="about.html">About Us</a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link" href="about.html">About Us</a></li>
                     <li class="nav-item" role="presentation"><a class="nav-link" href="contact.html">Contact Us</a></li>
                     <li class="nav-item dropdown"><a class="dropdown-toggle nav-link" data-toggle="dropdown" aria-expanded="false" href="#">Discover More</a>
                         <div class="dropdown-menu" role="menu"><a class="dropdown-item" role="presentation" href="facilities.html">Facilities</a><a class="dropdown-item" role="presentation" href="gallery.html">Gallery</a></div>
                     </li>
-                </ul><span class="navbar-text actions"> <a class="login" href="login.html">Log In</a><a class="btn btn-light action-button" role="button" href="reg.html" style="background-color: rgb(63,140,228);">Sign Up</a></span></div>
+                </ul><span class="navbar-text actions"> <a class="login" href="login.php">Log In</a><a class="btn btn-light action-button" role="button" href="reg.php" style="background-color: rgb(63,140,228);">Sign Up</a></span></div>
         </div>
     </nav>
-    <div class="login-clean" style="background-image: url(&quot;assets/img/seaside_reg.jpg&quot;);background-position: center;background-repeat: no-repeat;background-size: cover;">
-        <form method="post">
-            <h2 class="sr-only">Login Form</h2>
-            <div class="illustration"><i class="icon ion-ios-navigate" style="color: rgb(63,140,228);"></i></div>
-            <div class="form-group"><input class="form-control" type="email" name="email" placeholder="Email"></div>
-            <div class="form-group"><input class="form-control" type="password" name="password" placeholder="Password"></div>
-            <div class="form-group"><button class="btn btn-primary btn-block" type="submit" style="background-color: rgb(63,140,228);">Log In</button></div><a class="forgot" href="#">Forgot your email or password?</a></form>
+    <div class="highlight-clean" style="margin-bottom: 50px;background: url(assets/img/landing_page.png) center / cover no-repeat;">
+        <div class="container">
+            <div class="intro">
+                <h3 class="text-center" style="font-size: 72px;font-weight: normal;color: rgb(255,255,255);">An&nbsp;<strong>ocean breeze</strong>&nbsp;puts a mind at ease.<br></h3>
+                <p class="text-center text-white-50" style="font-size: 24px;">Almost everything will work again if you unplug it for a few minutes. That's why we think you should plan your next vacation at <br>Seaside South Park.<br></p>
+            </div>
+            <div class="buttons"><a class="btn btn-primary" role="button" href="index.html#book">Book Now</a><a class="btn btn-light" role="button" href="index.html#festivals">Upcoming Festivals</a></div>
+        </div>
+    </div>
+    <div id="book" style="margin-bottom: 50px;">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h1><strong>Find</strong> your stay</h1>
+                    <p>Reserve a room today</p>
+                </div>
+            </div>
+            <form name="findroom" method="POST">
+                <div class="form-row">
+                    <div class="col-md-3"><label>Check-In</label><input class="form-control" type="date" name="chkin" id="chkin" required></div>
+                    <div class="col-md-3"><label>Check-Out</label><input class="form-control" type="date" name="chkout" id="chkout" required></div>
+                    <div class="col-md-3"><label>Room Type</label><select class="form-control" name="roomtype" required><optgroup label="Select room type"><option value="single" selected="">Single</option><option value="double">Double</option><option value="family">Family</option></optgroup></select></div>
+                    <div
+                        class="col-md-3"><label>&nbsp;</label><button class="btn btn-primary" type="submit" style="width: 100%;">Check For Availability</button></div>
+        </div>
+        </form>
+    </div>
+    </div>
+    <div id="festivals" style="margin-bottom: 50px;">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h1><strong>Discover</strong>&nbsp;the Culture<br>Find the perfect festivals for you</h1>
+                    <p><a href="#">Learn More &gt;</a></p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="card" style="margin-bottom: 20px;"><img class="card-img-top w-100 d-block" style="background: url(assets/img/festival3.jpg) center / cover no-repeat;height: 300px;">
+                        <div class="card-body">
+                            <h4 class="card-title">Explore the city</h4>
+                            <p class="card-text">Always, some great culture is dying to enrich the soil of new harvests, some civlization is crumbling to rubbish to be the hill of a more beautiful city, some race is spending itself that a lower and more barbarous world may
+                                inherit its stored treasure house.<br></p><button class="btn btn-primary" type="button">Discover</button></div>
+                    </div>
+                </div>
+            </div>
+            <div class="row" style="height: 300px;">
+                <div class="col-md-6" style="margin-bottom: 20px;">
+                    <div class="card"><img class="card-img w-100 d-block" style="background: url(assets/img/festival1.jpg) center / cover no-repeat;height: 300px;border-radius: 5px;">
+                        <a href="#"><div class="card-img-overlay">
+                            <h4 style="color: rgb(255,255,255);text-shadow: 0px 0px 1px rgb(0,0,0);">Embrace The Culture</h4>
+                            <p style="color: rgb(255,255,255);text-shadow: 0px 0px 1px rgb(0,0,0);">It's always colorful</p>
+                        </div></a>
+                    </div>
+                </div>
+                <div class="col-md-6" style="margin-bottom: 20px;">
+                    <div class="card"><img class="card-img w-100 d-block" style="background: url(assets/img/festival2.jpg) center / cover no-repeat;height: 300px;border-radius: 5px;">
+                        <a href="#"><div class="card-img-overlay">
+                            <h4 style="color: rgb(255,255,255);text-shadow: 0px 0px 1px rgb(0,0,0);">Share Love &amp; Peace</h4>
+                            <p style="color: rgb(255,255,255);text-shadow: 0px 0px 1px rgb(0,0,0);">Beyond the limits</p>
+                        </div></a>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
     <div class="footer-dark" style="font-family: Cabin, sans-serif;">
         <footer>
