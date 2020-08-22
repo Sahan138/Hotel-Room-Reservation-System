@@ -1,9 +1,3 @@
-<?php
-
-    
-
-?>
-
 <!DOCTYPE html>
 <html>
 
@@ -41,7 +35,32 @@
     <link rel="stylesheet" href="assets/css/Social-Icons.css">
     <link rel="stylesheet" href="assets/css/styles.css">
     <link rel="stylesheet" href="assets/css/Team-Clean.css">
-    <link rel="stylesheet" href="assets/css/Testimonials.css"> 
+    <link rel="stylesheet" href="assets/css/Testimonials.css">
+
+    <?php
+
+    $con = mysqli_connect("localhost","root","","SeasideDB");
+    
+    if(isset($_POST['submit'])){
+        $username = mysqli_real_escape_string($con,$_POST['uname']);
+        $password = mysqli_real_escape_string($con,$_POST['password']);
+
+        $query = "Select * from tbluser where UName='$username' and Pass='$password'";
+        $result = mysqli_query($con,$query);
+        $row = mysqli_fetch_array($result,MYSQLI_ASSOC);
+
+        $count = mysqli_num_rows($result);
+        if($count==1){
+            header("location: index.php");
+            echo sprintf('<script type="text/javascript">alert("Welcome, %s");</script>', $username);
+        }
+        else{
+            echo '<script type="text/javascript">alert("Please check your Username & Password");</script>';
+        }
+    }
+    
+    ?>
+
 </head>
 
 <body style="font-family: Cabin, sans-serif;">
@@ -64,7 +83,7 @@
             <div class="illustration"><i class="icon ion-ios-navigate" style="color: rgb(63,140,228);"></i></div>
             <div class="form-group"><input class="form-control" type="text" name="uname" placeholder="Username" required maxlength="16"></div>
             <div class="form-group"><input class="form-control" type="password" name="password" placeholder="Password" required maxlength="16"></div>
-            <div class="form-group"><button class="btn btn-primary btn-block" type="submit" style="background-color: rgb(63,140,228);">Log In</button></div><a class="forgot" href="reg.html">Create an account</a></form>
+            <div class="form-group"><button class="btn btn-primary btn-block" type="submit" name="submit" style="background-color: rgb(63,140,228);">Log In</button></div><a class="forgot" href="reg.php">Create an account</a></form>
     </div>
     <div class="footer-dark" style="font-family: Cabin, sans-serif;">
         <footer>

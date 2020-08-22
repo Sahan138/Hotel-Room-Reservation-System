@@ -1,33 +1,3 @@
-<?php
-
-    $username = "root";
-    $password = "";
-
-    $con = mysqli_connect("localhost",$username,$password);
-    mysqli_select_db($con,"SeasideDB");
-
-    if(isset($_POST['submit'])){
-
-    $name = $_POST['uname'];
-    $pass = $_POST['password'];
-
-    $query = "Insert into tbluser (UName, Pass) Values ('$name', '$pass')";
-
-    $result = mysqli_query($query,$con);
-
-    if(!($result==NULL)){
-    echo '<script type="text/javascript>alert("Registration is successful. Please log in.");</script>';
-    }
-    else{
-    echo '<script type="text/javascript">alert("Registration is unsuccessful.");</script>';
-    }
-
-    }
-
-    mysqli_close($con);
-    
-?>
-
 <!DOCTYPE html>
 <html>
 
@@ -66,6 +36,29 @@
     <link rel="stylesheet" href="assets/css/styles.css">
     <link rel="stylesheet" href="assets/css/Team-Clean.css">
     <link rel="stylesheet" href="assets/css/Testimonials.css">
+
+    <?php
+
+    $con = mysqli_connect("localhost","root","","SeasideDB");
+
+    if(isset($_POST['submit'])){
+        $name = $_POST['uname'];
+        $pass = $_POST['password'];
+
+        $query = "Insert into tbluser (UName, Pass) Values ('$name', '$pass')";
+        $result = mysqli_query($query,$con);
+
+        if(!($result==NULL)){
+        echo '<script type="text/javascript>alert("Registration is successful. Please log in.");</script>';
+        }
+        else{
+        echo '<script type="text/javascript">alert("Registration is unsuccessful.");</script>';
+        }
+    }
+
+    mysqli_close($con);
+
+    ?>
     
     <script>
 
@@ -116,7 +109,7 @@
                 <div class="form-group">
                     <div class="form-check"><label class="form-check-label"><input class="form-check-input" type="checkbox" name="terms" id="terms">I agree to the license terms.</label></div>
                 </div>
-                <div class="form-group"><button class="btn btn-primary btn-block" type="submit" onclick="validateSignup();" style="background-color: rgb(63,140,228);">Sign Up</button></div><a class="already" href="login.html">You already have an account? Login here.</a></form>
+                <div class="form-group"><button class="btn btn-primary btn-block" type="submit" name="submit" onclick="validateSignup();" style="background-color: rgb(63,140,228);">Sign Up</button></div><a class="already" href="login.php">You already have an account? Login here.</a></form>
         </div>
     </div>
     <div class="footer-dark" style="font-family: Cabin, sans-serif;">

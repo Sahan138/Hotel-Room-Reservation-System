@@ -58,7 +58,7 @@
                 <h3 class="text-center" style="font-size: 72px;font-weight: normal;color: rgb(255,255,255);">An&nbsp;<strong>ocean breeze</strong>&nbsp;puts a mind at ease.<br></h3>
                 <p class="text-center text-white-50" style="font-size: 24px;">Almost everything will work again if you unplug it for a few minutes. That's why we think you should plan your next vacation at <br>Seaside South Park.<br></p>
             </div>
-            <div class="buttons"><a class="btn btn-primary" role="button" href="index.html#book">Book Now</a><a class="btn btn-light" role="button" href="index.html#festivals">Upcoming Festivals</a></div>
+            <div class="buttons"><a class="btn btn-primary" role="button" href="index.php#book">Book Now</a><a class="btn btn-light" role="button" href="index.php#festivals">Upcoming Festivals</a></div>
         </div>
     </div>
     <div id="book" style="margin-bottom: 50px;">
