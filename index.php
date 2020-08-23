@@ -36,6 +36,38 @@
     <link rel="stylesheet" href="assets/css/styles.css">
     <link rel="stylesheet" href="assets/css/Team-Clean.css">
     <link rel="stylesheet" href="assets/css/Testimonials.css">
+
+    <script>
+
+    function showReserve(){
+
+        var chkin = document.getElementById("chkin").value;
+        var chkout = document.getElementById("chkout").value;
+
+        if((chkin == "") || (chkout == "")){   
+            alert("Please select check-in & check-out dates");
+        }
+        else{
+            if(document.getElementById("roomtype").selectedIndex == "0"){
+                document.getElementById("single").style.display = "block";
+                document.getElementById("double").style.display = "none";
+                document.getElementById("family").style.display = "none";
+            }
+            if(document.getElementById("roomtype").selectedIndex == "1"){
+                document.getElementById("single").style.display = "none";
+                document.getElementById("double").style.display = "block";
+                document.getElementById("family").style.display = "none";
+            }
+            if(document.getElementById("roomtype").selectedIndex == "2"){
+                document.getElementById("single").style.display = "none";
+                document.getElementById("double").style.display = "none";
+                document.getElementById("family").style.display = "block";
+            }
+        }
+    }
+
+    </script>
+
 </head>
 
 <body style="font-family: Cabin, sans-serif; margin-top: 88px;">
@@ -71,24 +103,108 @@
             </div>
             <form name="findroom" method="POST">
                 <div class="form-row">
-                    <div class="col-md-3"><label>Check-In</label><input class="form-control" type="date" name="chkin" id="chkin" required></div>
-                    <div class="col-md-3"><label>Check-Out</label><input class="form-control" type="date" name="chkout" id="chkout" required></div>
-                    <div class="col-md-3"><label>Room Type</label><select class="form-control" name="roomtype" required><optgroup label="Select room type"><option value="single" selected="">Single</option><option value="double">Double</option><option value="family">Family</option></optgroup></select></div>
+                    <div class="col-md-3"><label>Check-In</label><input class="form-control" type="date" name="chkin" id="chkin" value="" required></div>
+                    <div class="col-md-3"><label>Check-Out</label><input class="form-control" type="date" name="chkout" id="chkout" value="" required></div>
+                    <div class="col-md-3"><label>Room Type</label><select class="form-control" name="roomtype" id="roomtype" required><optgroup label="Select room type"><option value="single" selected="">Single</option><option value="double">Double</option><option value="family">Family</option></optgroup></select></div>
                     <div
-                        class="col-md-3"><label>&nbsp;</label><button class="btn btn-primary" type="submit" style="width: 100%;">Check For Availability</button></div>
+                        class="col-md-3"><label>&nbsp;</label><button class="btn btn-primary" type="button" onclick="showReserve();" style="width: 100%;">Check For Availability</button></div>
         </div>
         </form>
     </div>
     </div>
-    <div id="reserve" style="margin-bottom: 50px;">
+    <div id="single" style="margin-bottom: 50px; display: none;">
         <div class="container">
             <div class="row">
-                <div class="col-md-4" id="room1" style="margin-bottom: 10px;">
-                    <p>Paragraph</p><button class="btn btn-primary" type="button">Button</button></div>
-                <div class="col-md-4" id="room2" style="margin-bottom: 10px;">
-                    <p>Paragraph</p><button class="btn btn-primary" type="button">Button</button></div>
-                <div class="col-md-4" id="room3" style="margin-bottom: 10px;">
-                    <p>Paragraph</p><button class="btn btn-primary" type="button">Button</button></div>
+                <div class="col-md-12">
+                    <h1>Available Rooms</h1>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card"><img class="card-img-top w-100 d-block" style="background: url(assets/img/room1.jpg) center / cover no-repeat; height: 200px; border-radius: 5px;">
+                        <div class="card-body">
+                            <h4 class="card-title">Title&nbsp;</h4>
+                            <p class="card-text">Nullam id dolor id nibh ultricies vehicula ut id elit. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus.</p><button class="btn btn-primary" type="button">Reserve</button></div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card"><img class="card-img-top w-100 d-block" style="background: url(assets/img/room2.jpg) center / cover no-repeat; height: 200px; border-radius: 5px;">
+                        <div class="card-body">
+                            <h4 class="card-title">Title</h4>
+                            <p class="card-text">Nullam id dolor id nibh ultricies vehicula ut id elit. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus.</p><button class="btn btn-primary" type="button">Reserve</button></div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card"><img class="card-img-top w-100 d-block" style="background: url(assets/img/room3.jpg) center / cover no-repeat; height: 200px; border-radius: 5px;">
+                        <div class="card-body">
+                            <h4 class="card-title">Title</h4>
+                            <p class="card-text">Nullam id dolor id nibh ultricies vehicula ut id elit. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus.</p><button class="btn btn-primary" type="button">Reserve</button></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="double" style="margin-bottom: 50px; display: none;">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h1>Available Rooms</h1>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card"><img class="card-img-top w-100 d-block" style="background: url(assets/img/room4.jpg) center / cover no-repeat; height: 200px; border-radius: 5px;">
+                        <div class="card-body">
+                            <h4 class="card-title">Title</h4>
+                            <p class="card-text">Nullam id dolor id nibh ultricies vehicula ut id elit. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus.</p><button class="btn btn-primary" type="button">Reserve</button></div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card"><img class="card-img-top w-100 d-block" style="background: url(assets/img/room5.jpg) center / cover no-repeat; height: 200px; border-radius: 5px;">
+                        <div class="card-body">
+                            <h4 class="card-title">Title</h4>
+                            <p class="card-text">Nullam id dolor id nibh ultricies vehicula ut id elit. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus.</p><button class="btn btn-primary" type="button">Reserve</button></div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card"><img class="card-img-top w-100 d-block" style="background: url(assets/img/room6.jpg) center / cover no-repeat; height: 200px; border-radius: 5px;">
+                        <div class="card-body">
+                            <h4 class="card-title">Title</h4>
+                            <p class="card-text">Nullam id dolor id nibh ultricies vehicula ut id elit. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus.</p><button class="btn btn-primary" type="button">Reserve</button></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="family" style="margin-bottom: 50px; display: none;">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h1>Available Rooms</h1>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card"><img class="card-img-top w-100 d-block" style="background: url(assets/img/room7.jpg) center / cover no-repeat; height: 200px; border-radius: 5px;">
+                        <div class="card-body">
+                            <h4 class="card-title">Title</h4>
+                            <p class="card-text">Nullam id dolor id nibh ultricies vehicula ut id elit. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus.</p><button class="btn btn-primary" type="button">Reserve</button></div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card"><img class="card-img-top w-100 d-block" style="background: url(assets/img/room8.jpg) center / cover no-repeat; height: 200px; border-radius: 5px;">
+                        <div class="card-body">
+                            <h4 class="card-title">Title</h4>
+                            <p class="card-text">Nullam id dolor id nibh ultricies vehicula ut id elit. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus.</p><button class="btn btn-primary" type="button">Reserve</button></div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card"><img class="card-img-top w-100 d-block" style="background: url(assets/img/room9.jpg) center / cover no-repeat; height: 200px; border-radius: 5px;">
+                        <div class="card-body">
+                            <h4 class="card-title">Title</h4>
+                            <p class="card-text">Nullam id dolor id nibh ultricies vehicula ut id elit. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus.</p><button class="btn btn-primary" type="button">Reserve</button></div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>

@@ -52,7 +52,7 @@
         $count = mysqli_num_rows($result);
         if($count==1){
             header("location: index.php");
-            echo sprintf('<script type="text/javascript">alert("Welcome, %s");</script>', $username);
+            echo '<script type="text/javascript">updateUser();</script>';
         }
         else{
             echo '<script type="text/javascript">alert("Please check your Username & Password");</script>';
@@ -60,6 +60,15 @@
     }
     
     ?>
+
+    <script>
+
+    function updateUser()
+    {
+        document.getElementByID("user").innerHTML = "Hi, " +<?php echo $username ?>;
+    }
+
+    </script>
 
 </head>
 
@@ -74,7 +83,7 @@
                     <li class="nav-item dropdown"><a class="dropdown-toggle nav-link" data-toggle="dropdown" aria-expanded="false" href="#">Discover More</a>
                         <div class="dropdown-menu" role="menu"><a class="dropdown-item" role="presentation" href="index.php#features">Facilities</a><a class="dropdown-item" role="presentation" href="index.php#gallery">Gallery</a></div>
                     </li>
-                </ul><p class="navbar-text" style="margin-right: 16px;padding-top: 8px;margin-top: 13px;">Hi, User</p><span class="navbar-text actions"> <a class="login" href="login.php">Log In</a><a class="btn btn-light action-button" role="button" href="reg.php" style="background-color: rgb(63,140,228);">Sign Up</a></span></div>
+                </ul><p id="user" class="navbar-text" style="margin-right: 16px;padding-top: 8px;margin-top: 13px;">Hi, User</p><span class="navbar-text actions"> <a class="login" href="login.php">Log In</a><a class="btn btn-light action-button" role="button" href="reg.php" style="background-color: rgb(63,140,228);">Sign Up</a></span></div>
         </div>
     </nav>
     <div class="login-clean" style="background-image: url(&quot;assets/img/seaside_reg.jpg&quot;);background-position: center;background-repeat: no-repeat;background-size: cover;">
