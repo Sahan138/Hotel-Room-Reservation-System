@@ -446,7 +446,7 @@
         <form action="mailto:nimeshkavinda13@gmail.com" method="post" enctype="multipart/form-data">
             <h2 class="text-center">Contact us</h2>
             <div class="form-group"><input class="form-control" type="text" name="name" placeholder="Name" required></div>
-            <div class="form-group"><input class="form-control" type="email" name="email" placeholder="Email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"></div>
+            <div class="form-group"><input class="form-control" type="email" name="email" placeholder="Email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" required></div>
             <div class="form-group"><textarea class="form-control" name="message" placeholder="Message" rows="14" required></textarea></div>
             <div class="form-group"><button class="btn btn-primary" type="submit">send </button></div>
         </form>
