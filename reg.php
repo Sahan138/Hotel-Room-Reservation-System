@@ -44,17 +44,20 @@
     if(isset($_POST['submit'])){
         $name = $_POST['uname'];
         $pass = $_POST['password'];
+        $conpass = $_POST['passwordrepeat'];
 
+        if($pass==$conpass && isset($_POST['terms'])){
         $query = "Insert into tbluser (UName, Pass) Values ('$name', '$pass')";
         $result = mysqli_query($con,$query,);
 
-        if(!($result==NULL)){
-            header("location: login.php");
-            echo '<script type="text/javascript>alert("Registration is successful. Please log in.");</script>';
-        }
-        else{
-            echo '<script type="text/javascript">alert("Registration is unsuccessful.");</script>';
-        }
+            if(!($result==NULL)){
+                header("location: login.php");
+                echo '<script type="text/javascript>alert("Registration is successful. Please log in.");</script>';
+            }
+            else{
+                echo '<script type="text/javascript">alert("Registration is unsuccessful.");</script>';
+            }
+        } 
     }
 
     mysqli_close($con);
@@ -75,9 +78,6 @@
         if(!(terms==true)){
             alert("Please agree to Terms & Conditions");
             return;
-        }
-        else{
-
         }
     }
 

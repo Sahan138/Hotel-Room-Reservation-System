@@ -44,12 +44,12 @@
             <div
                 class="collapse navbar-collapse" id="navcol-1">
                 <ul class="nav navbar-nav mr-auto">
-                    <li class="nav-item" role="presentation"><a class="nav-link" href="about.html">About Us</a></li>
-                    <li class="nav-item" role="presentation"><a class="nav-link" href="contact.html">Contact Us</a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link" href="index.php#about">About Us</a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link" href="index.php#contact">Contact Us</a></li>
                     <li class="nav-item dropdown"><a class="dropdown-toggle nav-link" data-toggle="dropdown" aria-expanded="false" href="#">Discover More</a>
-                        <div class="dropdown-menu" role="menu"><a class="dropdown-item" role="presentation" href="facilities.html">Facilities</a><a class="dropdown-item" role="presentation" href="gallery.html">Gallery</a></div>
+                        <div class="dropdown-menu" role="menu"><a class="dropdown-item" role="presentation" href="index.php#features">Facilities</a><a class="dropdown-item" role="presentation" href="index.php#gallery">Gallery</a></div>
                     </li>
-                </ul><span class="navbar-text actions"> <a class="login" href="login.php">Log In</a><a class="btn btn-light action-button" role="button" href="reg.php" style="background-color: rgb(63,140,228);">Sign Up</a></span></div>
+                </ul><p class="navbar-text" style="margin-right: 16px;padding-top: 8px;margin-top: 13px;">Paragraph</p><span class="navbar-text actions"> <a class="login" href="login.php">Log In</a><a class="btn btn-light action-button" role="button" href="reg.php" style="background-color: rgb(63,140,228);">Sign Up</a></span></div>
         </div>
     </nav>
     <div class="highlight-clean" style="margin-bottom: 50px;background: url(assets/img/landing_page.png) center / cover no-repeat;">
@@ -79,6 +79,18 @@
         </div>
         </form>
     </div>
+    </div>
+    <div id="reserve" style="margin-bottom: 50px;">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4" id="room1" style="margin-bottom: 10px;">
+                    <p>Paragraph</p><button class="btn btn-primary" type="button">Button</button></div>
+                <div class="col-md-4" id="room2" style="margin-bottom: 10px;">
+                    <p>Paragraph</p><button class="btn btn-primary" type="button">Button</button></div>
+                <div class="col-md-4" id="room3" style="margin-bottom: 10px;">
+                    <p>Paragraph</p><button class="btn btn-primary" type="button">Button</button></div>
+            </div>
+        </div>
     </div>
     <div id="festivals" style="margin-bottom: 50px;">
         <div class="container">
@@ -118,6 +130,230 @@
             </div>
         </div>
     </div>
+    <div id="about" class="highlight-phone">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8">
+                    <div class="intro">
+                        <h2>We Are Here to Make Your Summer.</h2>
+                        <p>We are a Hotel-chain with tens of our Hotels spread across the entire island. We have been ranked as No.1 for our Hospitality for years and keeps growing as a reputed brand in Sri Lanka.<br></p><a class="btn btn-primary" role="button"
+                            href="index.php#reviews"><strong>customer Reviews</strong><br></a></div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="d-none d-md-block iphone-mockup"><img class="device" src="assets/img/iphone.svg">
+                        <div class="screen" style="background-image: url(&quot;assets/img/screen-content-iphone-6.jpg&quot;);"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="team-clean">
+        <div class="container">
+            <div class="intro">
+                <h2 class="text-center">Team Behind Seaside South Park</h2>
+                <p class="text-center">Meet the amazing people behind the Room Reservation System of Seaside South Park.</p>
+            </div>
+            <div class="row people">
+                <div class="col-md-6 col-lg-4 item"><img class="rounded-circle" src="assets/img/nimesh.png">
+                    <h3 class="name">Nimesh Kavinda</h3>
+                    <p class="title">Full-Stack Developer</p>
+                    <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.<br></p>
+                    <div
+                        class="social"><a href="#"><i class="fa fa-facebook-official"></i></a><a href="#"><i class="fa fa-twitter"></i></a><a href="#"><i class="fa fa-instagram"></i></a></div>
+            </div>
+            <div class="col-md-6 col-lg-4 item"><img class="rounded-circle" src="assets/img/sahan.jpg">
+                <h3 class="name">Sahan Nishantha</h3>
+                <p class="title">Back-End Developer</p>
+                <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.<br></p>
+                <div
+                    class="social"><a href="#"><i class="fa fa-facebook-official"></i></a><a href="#"><i class="fa fa-twitter"></i></a><a href="#"><i class="fa fa-instagram"></i></a></div>
+        </div>
+        <div class="col-md-6 col-lg-4 item"><img class="rounded-circle" src="assets/img/anuda.jpg">
+            <h3 class="name">Anuda Nethmin</h3>
+            <p class="title">Back-End Developer</p>
+            <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.<br></p>
+            <div
+                class="social"><a href="#"><i class="fa fa-facebook-official"></i></a><a href="#"><i class="fa fa-twitter"></i></a><a href="#"><i class="fa fa-instagram"></i></a></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div id="reviews" class="testimonials-clean">
+        <div class="container">
+            <div class="intro">
+                <h2 class="text-center">Testimonials </h2>
+                <p class="text-center">This is what people had to say about Seaside South Park.</p>
+            </div>
+            <div class="row people">
+                <div class="col-md-6 col-lg-4 item">
+                    <div class="box">
+                        <p class="description">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.&nbsp;<br></p>
+                    </div>
+                    <div class="author"><img class="rounded-circle" src="assets/img/customer1.jpg">
+                        <h5 class="name">Kevin Samaraweera</h5>
+                        <p class="title">BSc (Hons) Software Engineering</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 item">
+                    <div class="box">
+                        <p class="description">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.&nbsp;<br></p>
+                    </div>
+                    <div class="author"><img class="rounded-circle" src="assets/img/customer2.jpg">
+                        <h5 class="name">Ranuja Wanigasinghe</h5>
+                        <p class="title">Computer Security Undergraduate</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 item">
+                    <div class="box">
+                        <p class="description">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.&nbsp;<br></p>
+                    </div>
+                    <div class="author"><img class="rounded-circle" src="assets/img/customer3.jpg">
+                        <h5 class="name">Shanuka Rathnayake</h5>
+                        <p class="title">Computer Security Undergraduate</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div id="features" class="features-blue">
+        <div class="container">
+            <div class="intro">
+                <h2 class="text-center">Why Choose Us?</h2>
+                <p class="text-center">Seaside South Park has been ranked No.1 Hotel chain in Sri Lanka.</p>
+            </div>
+            <div class="row features">
+                <div class="col-sm-6 col-md-4 item"><i class="fa fa-map-marker icon" style="color: rgb(194,194,194);"></i>
+                    <h3 class="name">Test</h3>
+                    <p class="description">Aenean tortor est, vulputate quis leo in, vehicula rhoncus lacus. Praesent aliquam in tellus eu gravida. Aliquam varius finibus est.</p>
+                </div>
+                <div class="col-sm-6 col-md-4 item"><i class="fa fa-hotel icon" style="color: rgb(194,194,194);"></i>
+                    <h3 class="name">Test</h3>
+                    <p class="description">Aenean tortor est, vulputate quis leo in, vehicula rhoncus lacus. Praesent aliquam in tellus eu gravida. Aliquam varius finibus est.</p>
+                </div>
+                <div class="col-sm-6 col-md-4 item"><i class="fa fa-leaf icon" style="color: rgb(194,194,194);"></i>
+                    <h3 class="name">Test</h3>
+                    <p class="description">Aenean tortor est, vulputate quis leo in, vehicula rhoncus lacus. Praesent aliquam in tellus eu gravida. Aliquam varius finibus est.</p>
+                </div>
+                <div class="col-sm-6 col-md-4 item"><i class="icon ion-android-restaurant icon" style="color: rgb(194,194,194);"></i>
+                    <h3 class="name">Test</h3>
+                    <p class="description">Aenean tortor est, vulputate quis leo in, vehicula rhoncus lacus. Praesent aliquam in tellus eu gravida. Aliquam varius finibus est.</p>
+                </div>
+                <div class="col-sm-6 col-md-4 item"><i class="fa fa-shopping-cart icon" style="color: rgb(194,194,194);"></i>
+                    <h3 class="name">Test</h3>
+                    <p class="description">Aenean tortor est, vulputate quis leo in, vehicula rhoncus lacus. Praesent aliquam in tellus eu gravida. Aliquam varius finibus est.</p>
+                </div>
+                <div class="col-sm-6 col-md-4 item"><i class="fa fa-credit-card icon" style="color: rgb(194,194,194);"></i>
+                    <h3 class="name">Test</h3>
+                    <p class="description">Aenean tortor est, vulputate quis leo in, vehicula rhoncus lacus. Praesent aliquam in tellus eu gravida. Aliquam varius finibus est.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="projects-horizontal">
+        <div class="container">
+            <div class="intro">
+                <h2 class="text-center">The Most&nbsp;<strong>Luxurious Experience</strong></h2>
+                <p class="text-center">At Seaside South Park, You get to experience <br>a true 5-start hotel experience.</p>
+            </div>
+            <div class="row projects">
+                <div class="col-sm-6 item">
+                    <div class="row">
+                        <div class="col-md-12 col-lg-5"><a href="#"><img class="img-fluid" src="assets/img/hotel1.jpg"></a></div>
+                        <div class="col">
+                            <h3 class="name">Test</h3>
+                            <p class="description">Aenean tortor est, vulputate quis leo in, vehicula rhoncus lacus. Praesent aliquam in tellus eu gravida.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 item">
+                    <div class="row">
+                        <div class="col-md-12 col-lg-5"><a href="#"><img class="img-fluid" src="assets/img/hotel2.jpg"></a></div>
+                        <div class="col">
+                            <h3 class="name">Test</h3>
+                            <p class="description">Aenean tortor est, vulputate quis leo in, vehicula rhoncus lacus. Praesent aliquam in tellus eu gravida.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 item">
+                    <div class="row">
+                        <div class="col-md-12 col-lg-5"><a href="#"><img class="img-fluid" src="assets/img/hotel3.jpg"></a></div>
+                        <div class="col">
+                            <h3 class="name">Test</h3>
+                            <p class="description">Aenean tortor est, vulputate quis leo in, vehicula rhoncus lacus. Praesent aliquam in tellus eu gravida.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 item">
+                    <div class="row">
+                        <div class="col-md-12 col-lg-5"><a href="#"><img class="img-fluid" src="assets/img/hotel4.jpg"></a></div>
+                        <div class="col">
+                            <h3 class="name">Test</h3>
+                            <p class="description">Aenean tortor est, vulputate quis leo in, vehicula rhoncus lacus. Praesent aliquam in tellus eu gravida.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="gallery" class="simple-slider">
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide" style="background-image: url(&quot;assets/img/gallery1.jpg&quot;);background-position: center;background-size: cover;background-repeat: no-repeat;"></div>
+                <div class="swiper-slide" style="background-image: url(&quot;assets/img/gallery2.png&quot;);background-position: center;background-size: cover;background-repeat: no-repeat;"></div>
+                <div class="swiper-slide" style="background-image: url(&quot;assets/img/gallery3.jpg&quot;);background-position: center;background-size: cover;background-repeat: no-repeat;"></div>
+                <div class="swiper-slide" style="background-image: url(&quot;assets/img/gallery4.jpg&quot;);background-position: center;background-size: cover;background-repeat: no-repeat;"></div>
+            </div>
+            <div class="swiper-pagination"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+        </div>
+    </div>
+    <div class="photo-gallery">
+        <div class="container">
+            <div class="intro">
+                <h2 class="text-center"><strong>Witness Greatness</strong></h2>
+                <p class="text-center">Our Hotels are ranked in the top for a reason. <br>Are you ready to witness greatness?</p>
+            </div>
+            <div class="row photos">
+                <div class="col-sm-6 col-md-4 col-lg-3 item"><a data-lightbox="photos" href="assets/img/hotel1.jpg"><img class="img-fluid" src="assets/img/hotel1.jpg"></a></div>
+                <div class="col-sm-6 col-md-4 col-lg-3 item"><a data-lightbox="photos" href="assets/img/hotel2.jpg"><img class="img-fluid" src="assets/img/hotel2.jpg"></a></div>
+                <div class="col-sm-6 col-md-4 col-lg-3 item"><a data-lightbox="photos" href="assets/img/hotel3.jpg"><img class="img-fluid" src="assets/img/hotel3.jpg"></a></div>
+                <div class="col-sm-6 col-md-4 col-lg-3 item"><a data-lightbox="photos" href="assets/img/hotel4.jpg"><img class="img-fluid" src="assets/img/hotel4.jpg"></a></div>
+            </div>
+        </div>
+    </div>
+    <div class="social-icons" style="padding-top: 30px;">
+        <p style="font-size: 20px;">Follow Us on Socials</p><a href="#"><i class="icon ion-social-twitter"></i></a><a href="#"><i class="icon ion-social-facebook"></i></a><a href="#"><i class="icon ion-social-snapchat"></i></a><a href="#"><i class="icon ion-social-youtube"></i></a>
+    </div>
+    <div id="contact" class="contact-clean" style="background-image: url(&quot;assets/img/seasidesouthpark.jpg&quot;);background-position: center;background-size: cover;background-repeat: no-repeat;">
+        <form action="mailto:nimeshkavinda13@gmail.com" method="post" enctype="multipart/form-data">
+            <h2 class="text-center">Contact us</h2>
+            <div class="form-group"><input class="form-control" type="text" name="name" placeholder="Name" required></div>
+            <div class="form-group"><input class="form-control" type="email" name="email" placeholder="Email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"></div>
+            <div class="form-group"><textarea class="form-control" name="message" placeholder="Message" rows="14" required></textarea></div>
+            <div class="form-group"><button class="btn btn-primary" type="submit">send </button></div>
+        </form>
+    </div>
+    <div class="map-clean">
+        <div class="container">
+            <div class="intro">
+                <h2 class="text-center">Location </h2>
+                <p class="text-center">Find Us on Google Maps</p>
+            </div>
+        </div><iframe allowfullscreen="" frameborder="0" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d990.3947728733034!2d80.040874!3d6.820936!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xddb466719c0595db!2sNSBM%20Green%20University!5e0!3m2!1sen!2sus!4v1594313210781!5m2!1sen!2sus" width="100%" height="450"></iframe></div>
+    <div class="newsletter-subscribe">
+        <div class="container">
+            <div class="intro">
+                <h2 class="text-center">Subscribe for our Newsletter</h2>
+                <p class="text-center">Want to stay updated?<br>Subscribe to our monthly Newsletter.</p>
+            </div>
+            <form class="form-inline" method="post">
+                <div class="form-group"><input class="form-control" type="email" name="email" placeholder="Your Email"></div>
+                <div class="form-group"><button class="btn btn-primary" type="submit">Subscribe </button></div>
+            </form>
+        </div>
+    </div>
     <div class="footer-dark" style="font-family: Cabin, sans-serif;">
         <footer>
             <div class="container">
@@ -127,15 +363,15 @@
                         <ul>
                             <li><a href="index.php#book">Rooms</a></li>
                             <li><a href="index.php#festivals">Tours</a></li>
-                            <li><a href="facilities.html">Facilities</a></li>
+                            <li><a href="index.php#features">Facilities</a></li>
                         </ul>
                     </div>
                     <div class="col-sm-6 col-md-3 item">
                         <h3>Reach Us</h3>
                         <ul>
-                            <li><a href="about.html">About</a></li>
-                            <li><a href="contact.html">Contact</a></li>
-                            <li><a href="about.html#reviews">Testimonials</a></li>
+                            <li><a href="index.php#about">About</a></li>
+                            <li><a href="index.php#contact">Contact</a></li>
+                            <li><a href="index.php#reviews">Testimonials</a></li>
                         </ul>
                     </div>
                     <div class="col-md-6 item text">
@@ -144,6 +380,7 @@
                     </div>
                     <div class="col item social"><a href="#"><i class="icon ion-social-facebook"></i></a><a href="#"><i class="icon ion-social-twitter"></i></a><a href="#"><i class="icon ion-social-snapchat"></i></a><a href="#"><i class="icon ion-social-instagram"></i></a></div>
                 </div>
+                <center style="margin-top:16px;"><ul><li><a href="index.php#"><b>Go to Top ></b></a></li></ul></center>
                 <p class="copyright">Seaside South Park © 2020</p>
             </div>
         </footer>

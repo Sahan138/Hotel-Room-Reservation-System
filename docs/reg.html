@@ -44,17 +44,20 @@
     if(isset($_POST['submit'])){
         $name = $_POST['uname'];
         $pass = $_POST['password'];
+        $conpass = $_POST['passwordrepeat'];
 
+        if($pass==$conpass && isset($_POST['terms'])){
         $query = "Insert into tbluser (UName, Pass) Values ('$name', '$pass')";
         $result = mysqli_query($con,$query,);
 
-        if(!($result==NULL)){
-            header("location: login.php");
-            echo '<script type="text/javascript>alert("Registration is successful. Please log in.");</script>';
-        }
-        else{
-            echo '<script type="text/javascript">alert("Registration is unsuccessful.");</script>';
-        }
+            if(!($result==NULL)){
+                header("location: login.php");
+                echo '<script type="text/javascript>alert("Registration is successful. Please log in.");</script>';
+            }
+            else{
+                echo '<script type="text/javascript">alert("Registration is unsuccessful.");</script>';
+            }
+        } 
     }
 
     mysqli_close($con);
@@ -76,9 +79,6 @@
             alert("Please agree to Terms & Conditions");
             return;
         }
-        else{
-
-        }
     }
 
     </script>
@@ -91,12 +91,12 @@
             <div
                 class="collapse navbar-collapse" id="navcol-1">
                 <ul class="nav navbar-nav mr-auto">
-                    <li class="nav-item" role="presentation"><a class="nav-link active" href="about.html">About Us</a></li>
-                    <li class="nav-item" role="presentation"><a class="nav-link" href="contact.html">Contact Us</a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link" href="index.html#about">About Us</a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link" href="index.html#contact">Contact Us</a></li>
                     <li class="nav-item dropdown"><a class="dropdown-toggle nav-link" data-toggle="dropdown" aria-expanded="false" href="#">Discover More</a>
-                        <div class="dropdown-menu" role="menu"><a class="dropdown-item" role="presentation" href="facilities.html">Facilities</a><a class="dropdown-item" role="presentation" href="gallery.html">Gallery</a></div>
+                        <div class="dropdown-menu" role="menu"><a class="dropdown-item" role="presentation" href="index.html#features">Facilities</a><a class="dropdown-item" role="presentation" href="index.php#gallery">Gallery</a></div>
                     </li>
-                </ul><span class="navbar-text actions"> <a class="login" href="login.html">Log In</a><a class="btn btn-light action-button" role="button" href="reg.html" style="background-color: rgb(63,140,228);">Sign Up</a></span></div>
+                </ul><p class="navbar-text" style="margin-right: 16px;padding-top: 8px;margin-top: 13px;">Paragraph</p><span class="navbar-text actions"> <a class="login" href="login.html">Log In</a><a class="btn btn-light action-button" role="button" href="reg.html" style="background-color: rgb(63,140,228);">Sign Up</a></span></div>
         </div>
     </nav>
     <div class="register-photo">
@@ -120,17 +120,17 @@
                     <div class="col-sm-6 col-md-3 item">
                         <h3>Services</h3>
                         <ul>
-                            <li><a href="index.php#book">Rooms</a></li>
-                            <li><a href="index.php#festivals">Tours</a></li>
-                            <li><a href="facilities.html">Facilities</a></li>
+                            <li><a href="index.html#book">Rooms</a></li>
+                            <li><a href="index.html#festivals">Tours</a></li>
+                            <li><a href="index.html#features">Facilities</a></li>
                         </ul>
                     </div>
                     <div class="col-sm-6 col-md-3 item">
                         <h3>Reach Us</h3>
                         <ul>
-                            <li><a href="about.html">About</a></li>
-                            <li><a href="contact.html">Contact</a></li>
-                            <li><a href="about.html#reviews">Testimonials</a></li>
+                            <li><a href="index.html#about">About</a></li>
+                            <li><a href="index.html#contact">Contact</a></li>
+                            <li><a href="index.html#reviews">Testimonials</a></li>
                         </ul>
                     </div>
                     <div class="col-md-6 item text">
@@ -139,6 +139,7 @@
                     </div>
                     <div class="col item social"><a href="#"><i class="icon ion-social-facebook"></i></a><a href="#"><i class="icon ion-social-twitter"></i></a><a href="#"><i class="icon ion-social-snapchat"></i></a><a href="#"><i class="icon ion-social-instagram"></i></a></div>
                 </div>
+                <center style="margin-top:16px;"><ul><li><a href="index.html#"><b>Go to Top ></b></a></li></ul></center>
                 <p class="copyright">Seaside South Park © 2020</p>
             </div>
         </footer>
