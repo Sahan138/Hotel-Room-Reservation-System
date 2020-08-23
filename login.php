@@ -63,18 +63,18 @@
 
 </head>
 
-<body style="font-family: Cabin, sans-serif;">
-    <nav class="navbar navbar-light navbar-expand-md navigation-clean-button" style="font-family: Cabin, sans-serif;">
+<body style="font-family: Cabin, sans-serif; margin-top: 88px;">
+    <nav class="navbar fixed-top navbar-light navbar-expand-md navigation-clean-button" style="font-family: Cabin, sans-serif;">
         <div class="container"><a class="navbar-brand" href="index.php">Seaside South Park</a><button data-toggle="collapse" class="navbar-toggler" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
             <div
                 class="collapse navbar-collapse" id="navcol-1">
                 <ul class="nav navbar-nav mr-auto">
-                    <li class="nav-item" role="presentation"><a class="nav-link active" href="about.html">About Us</a></li>
-                    <li class="nav-item" role="presentation"><a class="nav-link" href="contact.html">Contact Us</a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link" href="index.php#about">About Us</a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link" href="index.php#contact">Contact Us</a></li>
                     <li class="nav-item dropdown"><a class="dropdown-toggle nav-link" data-toggle="dropdown" aria-expanded="false" href="#">Discover More</a>
-                        <div class="dropdown-menu" role="menu"><a class="dropdown-item" role="presentation" href="facilities.html">Facilities</a><a class="dropdown-item" role="presentation" href="gallery.html">Gallery</a></div>
+                        <div class="dropdown-menu" role="menu"><a class="dropdown-item" role="presentation" href="index.php#features">Facilities</a><a class="dropdown-item" role="presentation" href="index.php#gallery">Gallery</a></div>
                     </li>
-                </ul><span class="navbar-text actions"> <a class="login" href="login.php">Log In</a><a class="btn btn-light action-button" role="button" href="reg.php" style="background-color: rgb(63,140,228);">Sign Up</a></span></div>
+                </ul><p class="navbar-text" style="margin-right: 16px;padding-top: 8px;margin-top: 13px;">Hi, User</p><span class="navbar-text actions"> <a class="login" href="login.php">Log In</a><a class="btn btn-light action-button" role="button" href="reg.php" style="background-color: rgb(63,140,228);">Sign Up</a></span></div>
         </div>
     </nav>
     <div class="login-clean" style="background-image: url(&quot;assets/img/seaside_reg.jpg&quot;);background-position: center;background-repeat: no-repeat;background-size: cover;">
