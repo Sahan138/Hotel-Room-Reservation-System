@@ -134,22 +134,22 @@
                 <div class="col-md-4">
                     <div class="card"><img class="card-img-top w-100 d-block" style="background: url(assets/img/room1.jpg) center / cover no-repeat; height: 200px; border-radius: 5px;">
                         <div class="card-body">
-                            <h4 class="card-title">Title&nbsp;</h4>
-                            <p class="card-text">Nullam id dolor id nibh ultricies vehicula ut id elit. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus.</p><button class="btn btn-primary" type="button">Reserve</button></div>
+                            <h4 class="card-title">Standard Single Rooms&nbsp;</h4>
+                            <p class="card-text">. A standard single room includes all kinds of basic facilities such as a table, chair, desk, cupboard, dressing table, DVD player, television, telephone, coffee maker and a private bathroom.</p><button class="btn btn-primary" type="button">Reserve</button></div>
                     </div>
                 </div>
                 <div class="col-md-4">
                     <div class="card"><img class="card-img-top w-100 d-block" style="background: url(assets/img/room2.jpg) center / cover no-repeat; height: 200px; border-radius: 5px;">
                         <div class="card-body">
-                            <h4 class="card-title">Title</h4>
-                            <p class="card-text">Nullam id dolor id nibh ultricies vehicula ut id elit. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus.</p><button class="btn btn-primary" type="button">Reserve</button></div>
+                            <h4 class="card-title">Luxury Single Room</h4>
+                            <p class="card-text">The room is furnished with all luxury items such as television, telephone, AC, DVD player, table, chair, almirah, private stunning bathroom (with shower, bath module and all signature toiletries). additional amenities such as trouser press, safety box, hair dryer, kettle and air purifier with humidifier function and also all the basic facilities are included.</p><button class="btn btn-primary" type="button">Reserve</button></div>
                     </div>
                 </div>
                 <div class="col-md-4">
                     <div class="card"><img class="card-img-top w-100 d-block" style="background: url(assets/img/room3.jpg) center / cover no-repeat; height: 200px; border-radius: 5px;">
                         <div class="card-body">
-                            <h4 class="card-title">Title</h4>
-                            <p class="card-text">Nullam id dolor id nibh ultricies vehicula ut id elit. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus.</p><button class="btn btn-primary" type="button">Reserve</button></div>
+                            <h4 class="card-title">Deluxe Single Room</h4>
+                            <p class="card-text">All the basic and luxury facilities are included & seperate bedrooms, living areas and kitchens are also included. spacious with excellent views and exclusive amenities.</p><button class="btn btn-primary" type="button">Reserve</button></div>
                     </div>
                 </div>
             </div>
@@ -166,22 +166,22 @@
                 <div class="col-md-4">
                     <div class="card"><img class="card-img-top w-100 d-block" style="background: url(assets/img/room4.jpg) center / cover no-repeat; height: 200px; border-radius: 5px;">
                         <div class="card-body">
-                            <h4 class="card-title">Title</h4>
-                            <p class="card-text">Nullam id dolor id nibh ultricies vehicula ut id elit. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus.</p><button class="btn btn-primary" type="button">Reserve</button></div>
+                            <h4 class="card-title">Standard Double Room</h4>
+                            <p class="card-text"> A standard double room includes all kinds of basic facilities such as a table, chair, desk, cupboard, dressing table, DVD player, television, telephone, coffee maker and a private bathroom.</p><button class="btn btn-primary" type="button">Reserve</button></div>
                     </div>
                 </div>
                 <div class="col-md-4">
                     <div class="card"><img class="card-img-top w-100 d-block" style="background: url(assets/img/room5.jpg) center / cover no-repeat; height: 200px; border-radius: 5px;">
                         <div class="card-body">
-                            <h4 class="card-title">Title</h4>
-                            <p class="card-text">Nullam id dolor id nibh ultricies vehicula ut id elit. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus.</p><button class="btn btn-primary" type="button">Reserve</button></div>
+                            <h4 class="card-title">Luxury Double Room</h4>
+                            <p class="card-text">The room is furnished with all luxury items such as television, telephone, AC, DVD player, table, chair, almirah, private stunning bathroom (with shower, bath module and all signature toiletries). additional amenities such as trouser press, safety box, hair dryer, kettle and air purifier with humidifier function and also all the basic facilities are included.</p><button class="btn btn-primary" type="button">Reserve</button></div>
                     </div>
                 </div>
                 <div class="col-md-4">
                     <div class="card"><img class="card-img-top w-100 d-block" style="background: url(assets/img/room6.jpg) center / cover no-repeat; height: 200px; border-radius: 5px;">
                         <div class="card-body">
-                            <h4 class="card-title">Title</h4>
-                            <p class="card-text">Nullam id dolor id nibh ultricies vehicula ut id elit. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus.</p><button class="btn btn-primary" type="button">Reserve</button></div>
+                            <h4 class="card-title">Deluxe Double Room</h4>
+                            <p class="card-text">All the basic and luxury facilities are included & seperate bedrooms, living areas and kitchens are also included. spacious with excellent views and exclusive amenities.</p><button class="btn btn-primary" type="button">Reserve</button></div>
                     </div>
                 </div>
             </div>
@@ -198,22 +198,22 @@
                 <div class="col-md-4">
                     <div class="card"><img class="card-img-top w-100 d-block" style="background: url(assets/img/room7.jpg) center / cover no-repeat; height: 200px; border-radius: 5px;">
                         <div class="card-body">
-                            <h4 class="card-title">Title</h4>
-                            <p class="card-text">Nullam id dolor id nibh ultricies vehicula ut id elit. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus.</p><button class="btn btn-primary" type="button">Reserve</button></div>
+                            <h4 class="card-title">Standard Family Room</h4>
+                            <p class="card-text">A standard Family room includes all kinds of basic facilities such as a table, chair, desk, cupboard, dressing table, DVD player, television, telephone, coffee maker and a private bathroom.</p><button class="btn btn-primary" type="button">Reserve</button></div>
                     </div>
                 </div>
                 <div class="col-md-4">
                     <div class="card"><img class="card-img-top w-100 d-block" style="background: url(assets/img/room8.jpg) center / cover no-repeat; height: 200px; border-radius: 5px;">
                         <div class="card-body">
-                            <h4 class="card-title">Title</h4>
-                            <p class="card-text">Nullam id dolor id nibh ultricies vehicula ut id elit. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus.</p><button class="btn btn-primary" type="button">Reserve</button></div>
+                            <h4 class="card-title">Luxury Family Room</h4>
+                            <p class="card-text">The room is furnished with all luxury items such as television, telephone, AC, DVD player, table, chair, almirah, private stunning bathroom (with shower, bath module and all signature toiletries). additional amenities such as trouser press, safety box, hair dryer, kettle and air purifier with humidifier function and also all the basic facilities are included.</p><button class="btn btn-primary" type="button">Reserve</button></div>
                     </div>
                 </div>
                 <div class="col-md-4">
                     <div class="card"><img class="card-img-top w-100 d-block" style="background: url(assets/img/room9.jpg) center / cover no-repeat; height: 200px; border-radius: 5px;">
                         <div class="card-body">
-                            <h4 class="card-title">Title</h4>
-                            <p class="card-text">Nullam id dolor id nibh ultricies vehicula ut id elit. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus.</p><button class="btn btn-primary" type="button">Reserve</button></div>
+                            <h4 class="card-title">Deluxe Family Room</h4>
+                            <p class="card-text">All the basic and luxury facilities are included & seperate bedrooms, living areas and kitchens are also included. spacious with excellent views and exclusive amenities.</p><button class="btn btn-primary" type="button">Reserve</button></div>
                     </div>
                 </div>
             </div>
