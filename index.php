@@ -70,10 +70,13 @@
 
     <?php
     
-    //if($_GET['user']){
+    if(isset($_GET['user'])){
         $user = $_GET['user'];
-    //}
-
+    }
+    else{
+        $user = null;
+    }
+    
     ?>
     
 </head>
