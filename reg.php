@@ -37,33 +37,6 @@
     <link rel="stylesheet" href="assets/css/Team-Clean.css">
     <link rel="stylesheet" href="assets/css/Testimonials.css">
 
-    <?php
-
-    $con = mysqli_connect("localhost","root","","SeasideDB");
-
-    if(isset($_POST['submit'])){
-        $name = $_POST['uname'];
-        $pass = $_POST['password'];
-        $conpass = $_POST['passwordrepeat'];
-
-        if($pass==$conpass && isset($_POST['terms'])){
-        $query = "Insert into tbluser (UName, Pass) Values ('$name', '$pass')";
-        $result = mysqli_query($con,$query,);
-
-            if(!($result==NULL)){
-                header("location: login.php");
-                echo '<script type="text/javascript>alert("Registration is successful. Please log in.");</script>';
-            }
-            else{
-                echo '<script type="text/javascript">alert("Registration is unsuccessful.");</script>';
-            }
-        } 
-    }
-
-    mysqli_close($con);
-
-    ?>
-    
     <script>
 
         function validateSignup()
@@ -83,6 +56,33 @@
 
     </script>
 
+    <?php
+
+    $con = mysqli_connect("localhost","root","","seasidedb");
+
+    if(isset($_POST['submit'])){
+        $name = $_POST['uname'];
+        $pass = $_POST['password'];
+        $conpass = $_POST['passwordrepeat'];
+       
+        if($pass==$conpass && isset($_POST['terms'])){
+            $query = "Insert into tbluser(Username,Password) Values ('$name', '$pass')";
+            $result = mysqli_query($con,$query);
+
+            if(!($result==NULL)){
+                header("location: login.php");
+                echo '<script type="text/javascript>alert("Registration is successful. Please log in.");</script>';
+            }
+            else{
+                echo '<script type="text/javascript">alert("Registration is unsuccessful.");</script>';
+            }
+        } 
+    }
+
+    mysqli_close($con);
+?>
+
+
 </head>
 
 <body style="font-family: Cabin, sans-serif; margin-top: 88px;">
@@ -96,7 +96,7 @@
                     <li class="nav-item dropdown"><a class="dropdown-toggle nav-link" data-toggle="dropdown" aria-expanded="false" href="#">Discover More</a>
                         <div class="dropdown-menu" role="menu"><a class="dropdown-item" role="presentation" href="index.php#features">Facilities</a><a class="dropdown-item" role="presentation" href="index.php#gallery">Gallery</a></div>
                     </li>
-                </ul><p class="navbar-text" style="margin-right: 16px;padding-top: 8px;margin-top: 13px;">Hi, User</p><span class="navbar-text actions"> <a class="login" href="login.php">Log In</a><a class="btn btn-light action-button" role="button" href="reg.php" style="background-color: rgb(63,140,228);">Sign Up</a></span></div>
+                </ul><span class="navbar-text actions"> <a class="login" href="login.php">Log In</a><a class="btn btn-light action-button" role="button" href="reg.php" style="background-color: rgb(63,140,228);">Sign Up</a></span></div>
         </div>
     </nav>
     <div class="register-photo">

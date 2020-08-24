@@ -39,36 +39,26 @@
 
     <?php
 
-    $con = mysqli_connect("localhost","root","","SeasideDB");
+    $con = mysqli_connect("localhost","root","","seasidedb");
     
     if(isset($_POST['submit'])){
         $username = mysqli_real_escape_string($con,$_POST['uname']);
         $password = mysqli_real_escape_string($con,$_POST['password']);
 
-        $query = "Select * from tbluser where UName='$username' and Pass='$password'";
+        $query = "Select * from tbluser where Username='$username' and Password='$password'";
         $result = mysqli_query($con,$query);
         $row = mysqli_fetch_array($result,MYSQLI_ASSOC);
 
         $count = mysqli_num_rows($result);
         if($count==1){
-            header("location: index.php");
-            echo '<script type="text/javascript">updateUser();</script>';
+            header("location: index.php?user=$username");
         }
         else{
             echo '<script type="text/javascript">alert("Please check your Username & Password");</script>';
         }
     }
     
-    ?>
-
-    <script>
-
-    function updateUser()
-    {
-        document.getElementByID("user").innerHTML = "Hi, " +<?php echo $username ?>;
-    }
-
-    </script>
+    ?> 
 
 </head>
 
@@ -83,7 +73,7 @@
                     <li class="nav-item dropdown"><a class="dropdown-toggle nav-link" data-toggle="dropdown" aria-expanded="false" href="#">Discover More</a>
                         <div class="dropdown-menu" role="menu"><a class="dropdown-item" role="presentation" href="index.php#features">Facilities</a><a class="dropdown-item" role="presentation" href="index.php#gallery">Gallery</a></div>
                     </li>
-                </ul><p id="user" class="navbar-text" style="margin-right: 16px;padding-top: 8px;margin-top: 13px;">Hi, User</p><span class="navbar-text actions"> <a class="login" href="login.php">Log In</a><a class="btn btn-light action-button" role="button" href="reg.php" style="background-color: rgb(63,140,228);">Sign Up</a></span></div>
+                </ul></p><span class="navbar-text actions"> <a class="login" href="login.php">Log In</a><a class="btn btn-light action-button" role="button" href="reg.php" style="background-color: rgb(63,140,228);">Sign Up</a></span></div>
         </div>
     </nav>
     <div class="login-clean" style="background-image: url(&quot;assets/img/seaside_reg.jpg&quot;);background-position: center;background-repeat: no-repeat;background-size: cover;">
